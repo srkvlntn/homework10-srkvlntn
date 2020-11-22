@@ -1,0 +1,74 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	font: 16px/1.5 'Rubik', sans-serif;
+	color: #000;
+	background-color: #fff;
+	min-width: 320px;
+	font-weight: 300;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+
+}
+
+ol, ul, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 1rem;
+	line-height: 1.63;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	margin: 0 0 .5em;
+	font-weight: 500;
+}
+
+footer {
+  clear: both;
+  margin-bottom: 0;
+  
+}
+
+
+a {
+	color: #1976d2;
+	line-height: 1.75;
+	font-style: italic;
+}
+
+textarea {
+	height: 140px;
+}
+
+input, textarea {
+	font: 16px rubik, sans-serif;
+	color: #bdc6ca;
+	font-weight: 400;
+}
+
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 21px;
+}
+
+h5 {
+	font-size: 20px;
+}

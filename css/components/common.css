@@ -1,0 +1,372 @@
+/* Обертка которая обрезает все лишнее что выходит за ширину страници,
+к примеру если вы что то вытаскиваете марджинами то у вас появится горизонтальный скролл на странице, эта обертка его срезает
++ если вы забыли указать position: relative; на нужном блоке, это ваша отправная точка для позиционирования,
+чтобы не трогать body
+эта обертка есть в каждом проекте */
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+/* Элемент который центрирует контент на странице (только центрирует) */
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* Обертка для полей формы */
+
+.form-box {
+	margin-bottom: 15px;
+}
+
+/* Поля формы */
+
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 10px 65px 10px 15px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	border: solid 2px #e0e9f0;
+	transition: border-color .3s;
+	resize: none;
+	font-weight: 300;
+}
+
+.search-form .btn-search {
+	border: none;
+	color: #009688;
+	background-size: 20px 20px;
+	background-color: #fff;
+	position: relative;
+	right: -320px;
+	bottom: 2px;
+	top: -45px;
+	border-radius: 0 3px 3px 0;
+	width: 50px;
+	font-size: 18px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.form-box h3 {
+	font-size: 28px;
+}
+
+.btn-search:focus {
+	outline: none;
+}
+
+
+.form-control:focus {
+	outline: none;
+	border-color: #009688;
+}
+
+/* Стили для кроссбраузерности placeholder полей */
+
+.form-control::-webkit-input-placeholder {
+	color: #bdc6ca;
+}
+
+.form-control::-moz-placeholder {
+	opacity: 1;
+	color: #bdc6ca;
+}
+
+.form-control:-ms-input-placeholder {
+	color: #bdc6ca;
+}
+
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 15px;
+	border-radius: 4px;
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	line-height: 1.5;
+	outline: none;
+}
+
+.btn:hover {
+	background-color: #424242;
+}
+
+
+
+.form-btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 17px 80px;
+	border-radius: 5px;
+	background-color: #009688;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	line-height: 1.5;
+	outline: none;
+	cursor: pointer;
+}
+
+.form-btn:hover {
+	background-color: #008276;
+}
+
+.btn-card {
+	display: inline-block;
+	vertical-align: top;
+	padding: 17px 70px;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #009688;
+	text-decoration: none;
+	border: solid 2px #009688;
+	line-height: 1.5;
+	outline: none;
+	cursor: pointer;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.btn-card:hover {
+	background-color: #f2f2f2;
+}
+
+.nav {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	margin: 0;
+	width: 100%;
+}
+
+.nav a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #282b2f;
+	font-weight: 500;
+	font-style: normal;
+}
+.nav a:hover {
+	color: #009688;
+}
+
+
+.nav .current a {
+	color: #009688;
+}
+
+.num {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	color: #465a64;
+}
+
+
+.num a {
+	text-decoration: none;
+	color: #282b2f;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.num a:hover {
+	color: #000;
+}
+
+.header {
+	border-bottom: 1px solid #e0e9f0;
+	margin-bottom: 20px;
+}
+
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.intro {
+	padding: 40px 0;
+	background-color: #f5f8fb;
+	border-bottom: 1px solid #e0e9f0;
+}
+
+.breadcrumbs {
+	list-style: none;
+	display: flex;
+	padding-left: 0px;
+	margin-bottom: 85px;
+}
+
+
+.breadcrumbs li {
+	padding-right: 10px;
+	color: grey;
+}
+
+.breadcrumbs li a {
+	color: #282b2f;	
+	text-decoration: none;
+	font-style: normal;
+}
+
+.breadcrumbs li::after {
+	content: '>';
+	margin-left: 10px;
+}
+
+.breadcrumbs li a:hover {
+	color: #009688;	
+}
+
+.breadcrumbs li:last-child::after {
+	display: none;
+}
+
+.content-box{
+	padding-bottom: 50px;
+}
+
+.content-box::after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.content-box a:hover  {
+	color: #009688;
+}
+
+.article {
+	width: 70%;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.article img {
+	margin-bottom: 38px;
+	border-radius: 5px;
+	display: block;
+	width: 100%;
+}
+
+.article ol {
+	padding-left: 16px;
+}
+
+
+.aside {
+	width: 30%;
+	padding-left: 60px;
+	float: right;
+}
+
+.card {
+	padding: 30px 0;
+}
+
+.card a {
+	font-style: normal;
+}
+
+.card + .card {
+	border-top: 1px solid #e0e9f0;
+}
+
+.card img {
+	border-radius: 5px;
+	margin-bottom: 30px;
+	display: block;
+	width: 100%;
+}
+
+.card time {
+	display: block;
+	color: #bdc6ca;
+	margin-bottom: 10px;
+}
+
+.card a:hover {
+	color: #008276;
+	text-decoration: none;
+}
+
+
+.read-more {
+	color: #009688;
+	font-weight: 500;
+}
+
+.read-more:hover {
+   color: #008276;
+   text-decoration: none;
+}
+
+
+.section {
+	margin-bottom: 40px;
+}
+
+
+.section ol li {
+	color: #282b2f;
+}
+
+.footer {
+	padding: 45px 0;
+	border-top: 1px solid #e0e9f0;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer p {
+	margin: 0;
+}
+
+.social-networks {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.social-networks a {
+	color: #546e7a;
+	font-size: 18px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.social-networks a:hover {
+	color: #009688;
+}
+
+
+.watch-type li {
+	padding: 0;
+	list-style-type: none;
+}
+
+.watch-type li:before {
+	content: '-';
+	color: #546e7a;
+}
+
+.comment-form {
+	padding: 45px 0;
+	border-top: 1px solid #e0e9f0;
+}
